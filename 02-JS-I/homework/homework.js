@@ -184,7 +184,7 @@ function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
   
-  return math.random(0,1);
+ return Math.random(0,1);
 
 }
 
@@ -194,14 +194,14 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   
-  if(numero > 0) {
+  if(numero === 0) {
     return false;
   }
   else if(numero > 0) {
-    return "es positivo"
+    return "Es positivo"
   }
   else {
-    return "es negativo";
+    return "Es negativo";
   }
 }
 
@@ -225,13 +225,13 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return 'hola ' + nombre + '!';
+  return 'Hola ' + nombre + '!';
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
   // Retornar el area de un rectángulo teniendo su altura y ancho
   // Tu código:
-  return alto * ancho;
+  return alto *= ancho;
 }
 
 
@@ -253,7 +253,7 @@ function deEuroAdolar(euro){
   //Supongamos que 1 euro equivale a 1.20 dólares. Escribe un programa que reciba
   //como parámetro un número de euros y calcule el cambio en dólares.
   //Escribe tu código aquí
-  return euro * 1,2;
+  return euro * 1.2;
 }
 
 
@@ -264,12 +264,12 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if(letra.lenght > 1){
-    return "dato incorrecto"
+    return "Dato incorrecto"
   }
   if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u"){
-    return "es vocal"
+    return "Es vocal"
   }
-  return "dato incorrecto"
+  return "Dato incorrecto"
 }
 
 
